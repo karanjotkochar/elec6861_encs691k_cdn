@@ -1,0 +1,5 @@
+openssl req -x509 -newkey rsa:4096 -sha256 -keyout openssl.key -out openssl.crt
+
+openssl req -newkey rsa:4096 -nodes -keyout openssl.key -x509 -days 600 -out openssl.crt
+
+http://127.0.0.1:8081/
